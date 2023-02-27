@@ -7,6 +7,7 @@ import Header from './components/Header/Header'
 import Footer from './shared/Footer/Footer'
 import Experience from './components/experience/Experience'
 import Blogs from './components/blogs/Blogs'
+import Skills from './components/skillls/Skills'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,6 +16,7 @@ export default function Home() {
    <main className='container lg:w-[96%] sm:w-full mx-auto'>
     <Navbar/>
     <Header/>
+    <Skills/>
     <Experience/>
     <Blogs/>
     <Footer/>
