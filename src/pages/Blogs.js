@@ -1,8 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Blogs = () => {
+
   const blogs = [
     {
       name: "",
@@ -46,7 +46,7 @@ const Blogs = () => {
     },
   ];
   return (
-    <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 text-center">
       <h2 className="mt-1 text-3xl font-bold font-serif">MY Latest Blogs</h2>
       <p className="text-slate-700 mt-1 mb-4">There are some latest blogs of mine .
       You can Explore my blogs from here .
@@ -55,11 +55,11 @@ const Blogs = () => {
       <div className="grid gap-5 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
         {/*  */}
 
-        {blogs.map((blog) => {
+        {blogs?.splice(1,3)?.map((blog) => {
           return (
             <div key={blog.name} className="overflow-hidden transition-shadow duration-300 bg-white rounded">
               <Link href="/" aria-label="Article">
-                <Image
+                <img
                   src={blog.img}
                   className="object-cover w-full h-64 rounded"
                   alt=""
@@ -95,6 +95,10 @@ const Blogs = () => {
           );
         })}
       </div>
+
+      <section className="py-5 shadow-2xl w-[30%] mx-auto">
+      <Link href="/allProjects" className="bg-slate-700 text-center mx-auto px-[46px] mt-5 py-3 text-[24px] rounded text-white font-bold ">See All</Link>
+      </section>
     </div>
   );
 };

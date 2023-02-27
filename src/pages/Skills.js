@@ -26,15 +26,22 @@ const Skills = () => {
 
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="grid gap-5 row-gap-5 sm:grid-cols-2 lg:grid-cols-4">
+       <h2 className="mt-1 text-3xl font-bold font-serif">MY Professional Skills</h2>
+      <p className="text-slate-700 mt-1 mb-4">
+        Already I have been gained some Professional skills with hard working.
+        <br /> 
+        Since a long time I am working with these .
+      </p>
+      <div className="grid gap-5 row-gap-5 sm:grid-cols-2 lg:grid-cols-4 mt-5">
         {skills?.map((skill) => {
           return (
-            <div key={skill.name} className="px-[50px] text-center sm:px-0 hover:shadow-2xl ">
+            <div key={skill.name} className="px-[50px] text-center hover:shadow-2xl ">
               <div className="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
                 <img
                   src={skill.img}
                   className="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10"
                   alt="skill"
+
                 />
               </div>
               <h6 className="mb-2 text-sm font-bold leading-5 tracking-wider uppercase">

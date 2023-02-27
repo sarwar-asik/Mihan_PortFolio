@@ -11,27 +11,29 @@ const Navbar = () => {
       name: "Home",
       link: "/",
     },
-    {
-      name: "Skills",
-      link: "/skills/Skill",
-    },
+   
     {
       name: "Blogs",
-      link: "/",
+      link: "/Blogs",
     },
-    {
-      name: "Recent Work",
-      link: "/",
-    },
+    
     {
       name: "About Me",
-      link: "/",
+      link: "/Header",
+    },
+    {
+      name: "Contacts",
+      link: "/Contacts",
+    },
+    {
+      name: "Log In",
+      link: "/login",
     },
   ];
 
   return (
-    <div className="bg-[#85CDFD]">
-      <div class=" py-5 mx-auto px-3">
+    <div className="bg-[#85CDFD] rounded-b-sm">
+      <div class=" py-5 mx-auto px-5">
         <div class="relative flex items-center justify-between">
           <Link
             href="/"
@@ -63,9 +65,9 @@ const Navbar = () => {
               <li key={item}>
                 <Link
                   href={item.link}
-                  aria-label="Our product"
-                  title="Our product"
-                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  aria-label={item.name}
+                  title={item.name}
+                  class="font-serif tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400 text-[18px]"
                 >
                   {item.name}
                 </Link>
@@ -147,8 +149,8 @@ const Navbar = () => {
                         <li key={item}>
                           <Link
                             href={item.link}
-                            aria-label="About us"
-                            title="About us"
+                            aria-label={item.name}
+                            title={item.name}
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
                             {item.name}

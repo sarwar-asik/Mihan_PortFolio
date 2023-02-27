@@ -13,7 +13,9 @@
     "eslint-config-next": "13.2.1",
     "next": "^13.2.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.2",
+    "sweetalert2": "^11.7.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
