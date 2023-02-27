@@ -29,7 +29,7 @@ const Skills = () => {
       <div className="grid gap-5 row-gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {skills?.map((skill) => {
           return (
-            <div key={skill.name} className="px-12 text-center sm:px-0">
+            <div key={skill.name} className="px-12 text-center sm:px-0 hover:shadow-2xl">
               <div className="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
                 <img
                   src={skill.img}
